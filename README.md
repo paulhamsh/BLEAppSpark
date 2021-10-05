@@ -8,13 +8,13 @@ Currently doesn't work!
 I have copied code to get a client and a server running, but in the same file they don't work - I get an abort() error.
 
 I am scanning, connecting to a client, building the server then it crashes just as I advertise the server:
-
+```
   pAdvertising->start(); // start advertising
-
+```
 I had to move
-
+```
   pServer    = NimBLEDevice::createServer();
-
+```
 to the start of setup() else it failed on an ASSERT when it ran that.
 
 ```
