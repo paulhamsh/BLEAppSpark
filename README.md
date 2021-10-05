@@ -35,3 +35,12 @@ load:0x40078000,len:8896
 load:0x40080400,len:5816
 entry 0x400806ac
 ```
+
+And with debugging turned on to Debug level
+
+```
+
+
+```
+
+
