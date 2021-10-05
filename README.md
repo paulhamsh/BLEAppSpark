@@ -199,3 +199,157 @@ Backtrace: 0x40094198:0x3ffc6b60 0x400943c9:0x3ffc6b80 0x400debb7:0x3ffc6ba0 0x4
 Rebooting...
 ets Jul 29 2019 12:21:46
 ```
+
+
+And a log for BLE (not NimBLE)
+
+```
+Name 
+Name 
+Name  Spark 40 BLE
+Found Spark - trying to connect....[I][BLEDevice.cpp:593] addPeerDevice(): add conn_id: 1, GATT role: client
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: RegEvt (0x3ffd3c44), owner: <N/A> for connect
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: RegEvt (0x3ffd3c44), owner: connect
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: OpenEvt (0x3ffd3ca4), owner: <N/A> for connect
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: OpenEvt (0x3ffd3ca4), owner: connect
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:577] updatePeerDevice(): update conn_id: 5, GATT role: client
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+connected
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: SearchCmplEvt (0x3ffd3d04), owner: <N/A> for getServices
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SearchCmplEvt (0x3ffd3d04), owner: getServices
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLERemoteService.cpp:193] retrieveCharacteristics(): Found a characteristic: Handle: 59, UUID: 0000ffc2-0000-1000-8000-00805f9b34fb
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLERemoteCharacteristic.cpp:280] retrieveDescriptors(): Found a descriptor: Handle: 60, UUID: 00002902-0000-1000-8000-00805f9b34fb
+[D][BLERemoteService.cpp:193] retrieveCharacteristics(): Found a characteristic: Handle: 62, UUID: 0000ffc1-0000-1000-8000-00805f9b34fb
+[D][BLERemoteCharacteristic.cpp:280] retrieveDescriptors(): Found a descriptor: Handle: 63, UUID: 00002900-0000-1000-8000-00805f9b34fb
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: RegForNotifyEvt (0x3ffd68b0), owner: <N/A> for registerForNotify
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: RegForNotifyEvt (0x3ffd68b0), owner: registerForNotify
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+Connected to Spark amp....now the Spark app
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3ffd3a2c), owner: <N/A> for createService
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3ffd3a2c), owner: createService
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3ffd6f70), owner: <N/A> for executeCreate
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3ffd6f70), owner: executeCreate
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=0000ffc1-0000-1000-8000-00805f9b34fb to service: UUID: 0000ffc0-0000-1000-8000-00805f9b34fb, handle: 0x0028
+[D][BLEService.cpp:225] addCharacteristic(): Adding characteristic: uuid=0000ffc2-0000-1000-8000-00805f9b34fb to service: UUID: 0000ffc0-0000-1000-8000-00805f9b34fb, handle: 0x0028
+[D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: 0000ffc1-0000-1000-8000-00805f9b34fb, service: UUID: 0000ffc0-0000-1000-8000-00805f9b34fb, handle: 0x0028
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3ffd758c), owner: <N/A> for executeCreate
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3ffd758c), owner: executeCreate
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLECharacteristic.cpp:90] executeCreate(): Registering characteristic (esp_ble_gatts_add_char): uuid: 0000ffc2-0000-1000-8000-00805f9b34fb, service: UUID: 0000ffc0-0000-1000-8000-00805f9b34fb, handle: 0x0028
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: CreateEvt (0x3ffd7848), owner: <N/A> for executeCreate
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: CreateEvt (0x3ffd7848), owner: executeCreate
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: StartEvt (0x3ffd7238), owner: <N/A> for start
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: StartEvt (0x3ffd7238), owner: start
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[I][BLEDevice.cpp:554] getAdvertising(): create advertising
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:189] start(): - advertising service: 0000ffc0-0000-1000-8000-00805f9b34fb
+All good - let's go
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 0]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 1]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 6]
+
+```
+
+
+And then when the Spark app connects
+
+```
+All good - let's go
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 0]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 1]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 6]
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:577] updatePeerDevice(): update conn_id: 5, GATT role: client
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: SetValue (0x3ffd764c), owner: <N/A> for <Unknown>
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: SetValue (0x3ffd764c), owner: <Unknown>
+[D][BLECharacteristic.cpp:285] handleGATTServerEvent():  - Response to write event: New value: handle: 2a, uuid: 0000ffc1-0000-1000-8000-00805f9b34fb
+[D][BLECharacteristic.cpp:288] handleGATTServerEvent():  - Data: length: 23, data: 01fe000053fe17000000000000000000f0010100022ff7
+0000ffc1-0000-1000-8000-00805f9b34fb: onWrite, value:  1 FE 0 0 53 FE 17 0 0 0 0 0 0 0 0 0 F0 1 1 0 2 2F F7
+[D][FreeRTOS.cpp:189] take(): Semaphore taking: name: WriteCharEvt (0x3ffd6cc0), owner: <N/A> for writeValue
+[D][FreeRTOS.cpp:198] take(): Semaphore taken:  name: WriteCharEvt (0x3ffd6cc0), owner: writeValue
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+Wrote to 'Spark'
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:189] start(): - advertising service: 0000ffc0-0000-1000-8000-00805f9b34fb
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:158] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[I][BLEDevice.cpp:604] removePeerDevice(): remove: 1, GATT role client
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 0]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 1]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 6]
+[D][BLEDevice.cpp:102] gattServerEventHandler(): gattServerEventHandler [esp_gatt_if: 4] ... Unknown
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:189] start(): - advertising service: 0000ffc0-0000-1000-8000-00805f9b34fb
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEDevice.cpp:148] gattClientEventHandler(): gattClientEventHandler [esp_gatt_if: 5] ... Unknown
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 0]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 1]
+[D][BLEClient.cpp:458] handleGAPEvent(): BLEClient ... handling GAP event!
+[D][BLEDevice.cpp:556] getAdvertising(): get advertising
+[D][BLEAdvertising.cpp:491] handleGAPEvent(): handleGAPEvent [event no: 6]
+```
