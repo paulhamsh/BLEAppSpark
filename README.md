@@ -36,7 +36,7 @@ load:0x40080400,len:5816
 entry 0x400806ac
 ```
 
-And with debugging turned on to Debug level
+And with debugging turned on to Debug level - first log
 
 ```
 
@@ -121,4 +121,81 @@ ets Jul 29 2019 12:21:46
 
 ```
 
+And second log
 
+```
+I NimBLEScan: "Updated advertiser: 65:31:54:bf:77:b7"
+D NimBLEScan: "discovery complete; reason=0"
+------------------------------
+Name 
+Name 
+Name 
+Name  Spark 40 BLE
+D NimBLEUUID: "Comparing UUIDs; type 16 to 16; UUID 0xffc0 to 0xffc0"
+Found Spark - trying to connect....D NimBLEClient: ">> connect(65:31:54:bf:77:b7)"
+D NimBLEClient: "Got Client event "
+I NimBLEClient: "Connected event"
+D NimBLEClient: "Got Client event "
+I NimBLEClient: "mtu update event; conn_handle=0 mtu=255"
+I NimBLEClient: "Connection established"
+D NimBLEClient: ">> deleteServices"
+D NimBLEClient: "<< deleteServices"
+D NimBLEClientCallbacks: "onConnect: default"
+D NimBLEClient: "<< connect()"
+connected
+D NimBLEClient: ">> getService: uuid: 0xffc0"
+D NimBLEClient: ">> retrieveServices"
+D NimBLEClient: "Service Discovered >> status: 0 handle: 57"
+D NimBLERemoteService: ">> NimBLERemoteService()"
+D NimBLERemoteService: "<< NimBLERemoteService(): 0xffc0"
+D NimBLEClient: "Service Discovered >> status: 14 handle: -1"
+D NimBLEClient: "<< << Service Discovered"
+D NimBLEClient: "<< retrieveServices"
+D NimBLERemoteService: ">> getCharacteristic: uuid: 0xffc1"
+D NimBLERemoteService: ">> retrieveCharacteristics() for service: 0xffc0"
+D NimBLERemoteService: "Characteristic Discovered >> status: 0 handle: 62"
+D NimBLERemoteCharacteristic: ">> NimBLERemoteCharacteristic()"
+D NimBLERemoteCharacteristic: "<< NimBLERemoteCharacteristic(): 0xffc1"
+D NimBLERemoteService: "Characteristic Discovered >> status: 14 handle: -1"
+D NimBLERemoteService: "<< Characteristic Discovered"
+D NimBLERemoteService: "<< retrieveCharacteristics()"
+D NimBLERemoteService: ">> getCharacteristic: uuid: 0xffc2"
+D NimBLEUUID: "Comparing UUIDs; type 16 to 16; UUID 0xffc1 to 0xffc2"
+D NimBLERemoteService: ">> retrieveCharacteristics() for service: 0xffc0"
+D NimBLERemoteService: "Characteristic Discovered >> status: 0 handle: 59"
+D NimBLERemoteCharacteristic: ">> NimBLERemoteCharacteristic()"
+D NimBLERemoteCharacteristic: "<< NimBLERemoteCharacteristic(): 0xffc2"
+D NimBLERemoteService: "Characteristic Discovered >> status: 14 handle: -1"
+D NimBLERemoteService: "<< Characteristic Discovered"
+D NimBLERemoteService: "<< retrieveCharacteristics()"
+D NimBLERemoteCharacteristic: ">> setNotify(): Characteristic: uuid: 0xffc2, handle: 59 0x003b, props:  0x12, 01"
+D NimBLERemoteCharacteristic: ">> getDescriptor: uuid: 0x2902"
+D NimBLERemoteCharacteristic: ">> retrieveDescriptors() for characteristic: 0xffc2"
+D NimBLERemoteCharacteristic: "Descriptor Discovered >> status: 0 handle: 60"
+D NimBLERemoteCharacteristic: "Descriptor Found"
+D NimBLERemoteDescriptor: ">> NimBLERemoteDescriptor()"
+D NimBLERemoteDescriptor: "<< NimBLERemoteDescriptor(): 0x2902"
+D NimBLERemoteCharacteristic: "<< Descriptor Discovered. status: 0"
+D NimBLERemoteCharacteristic: "<< setNotify()"
+D NimBLERemoteDescriptor: ">> Descriptor writeValue: Descriptor: uuid: 0x2902, handle: 60"
+I NimBLERemoteDescriptor: "Write complete; status=0 conn_handle=0"
+D NimBLERemoteDescriptor: "<< Descriptor writeValue, rc: 0"
+D NimBLEScan: ">> stop()"
+D NimBLEScan: "<< stop()"
+Done Spark....
+D NimBLEServer: ">> createService - 0xffc0"
+D NimBLEServer: "<< createService"
+D NimBLEUUID: "Comparing UUIDs; type 16 to 16; UUID 0xffc1 to 0xffc2"
+D NimBLEService: ">> start(): Starting service: UUID: 0xffc0, handle: 0xffff"
+D NimBLEService: "Adding 2 characteristics for service UUID: 0xffc0, handle: 0xffff"
+E NimBLEService: "ble_gatts_add_svcs, rc= 15, "
+WAS OK TO HERE 8
+D NimBLEAdvertising: ">> Advertising start: customAdvData: 0, customScanResponseData: 0"
+E NimBLEServer: "ble_gatts_start; rc=15, "
+abort() was called at PC 0x400debb7 on core 1
+
+Backtrace: 0x40094198:0x3ffc6b60 0x400943c9:0x3ffc6b80 0x400debb7:0x3ffc6ba0 0x400da646:0x3ffc6bf0 0x400d295e:0x3ffc6c30 0x400f51c3:0x3ffc6cc0 0x400905b1:0x3ffc6ce0
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+```
