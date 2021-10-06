@@ -1,5 +1,7 @@
 # BLEAppSpark
-Server and client on M5 Core 2 to talk to Spark app and Spark amp with NimBLE
+Server and client on M5 Core 2 to talk to Spark app and Spark amp with NimBLE.
+
+*** IOS ONLY ***
 
 Works perfectly - a pass-thru from app to amp using BLE on a single M5Stack Core 2
 
