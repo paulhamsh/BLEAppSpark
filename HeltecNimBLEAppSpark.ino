@@ -269,7 +269,7 @@ void setup() {
     NimBLEUUID PedalServiceUuid(PEDAL_SERVICE);
 
     Serial.println("------------------------------");
-    for(i = 0; i < pResults.getCount()  && (!connected_sp || !connected_pedal); i++) {
+    for(i = 0; i < pResults.getCount()  && (!connected_sp /* || !connected_pedal */); i++) {
       device = pResults.getDevice(i);
 
       // Print info
