@@ -7,7 +7,7 @@ Works perfectly - a pass-thru from app to amp using BLE on a single M5Stack Core
 
 Turn on, turn on amp, turn on pedal (iRig Blueboard in the case of NimBLEAppSpark3), wait for connections, turn on app on IOS and press connect.
 
-It should show something like this:
+It should show something like this on M5 Stack:
 
 ```
 Name  Spark 40 BLE
