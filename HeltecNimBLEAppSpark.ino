@@ -263,7 +263,7 @@ void setup() {
   connected_sp = false;
   connected_pedal = false;
   
-  while (!connected_sp || !connected_pedal) {
+  while (!connected_sp /* || !connected_pedal*/ ) {
     pResults = pScan->start(4);
     NimBLEUUID SpServiceUuid(C_SERVICE);
     NimBLEUUID PedalServiceUuid(PEDAL_SERVICE);
